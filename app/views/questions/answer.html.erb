@@ -8,15 +8,17 @@
 
     <h2>Welcome to Stupid Coaching!</h2>
 
-    <div>
+    <div class="border-start border-5 mx-3 px-3">
       <p><strong>You:</strong> <%= @question %></p>
     </div>
 
-    <div>
+    <div class="border-start border-5 mx-3 px-3 bg-warning py-1 text-dark bg-opacity-25">
       <p><strong>Your coach:</strong> <%= @answer %></p>
     </div>
 
-    <a href="/ask">New question?</a>
+    <div class="text-decoration-none">
+      <%= link_to "Another question", ask_path %>
+    </div>
 
   </body>
 
